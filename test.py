@@ -1,4 +1,4 @@
-variable = "kage!"
+variable = "kage"
 print (variable)
 if variable == "kage":
     print ("lol")
