@@ -1,7 +1,7 @@
 import time
 variable  = "Jeppe"
 variable2 = "er"
-variable3 = "grim og lugter af lort"
+variable3 = "grim"
 variable4 = "FAIL!"
 print (variable)
 time.sleep(1)
