@@ -35,10 +35,10 @@ while running == True:
         result = (math.sqrt(a ** 2 + b ** 2))
     if flag == True:
         print ("The result is: ", result)
-
-    print (" ")    
-    print ("Yes for continue     No for exit")
-    keeprunning = input("Do you want to continue? ")
+    print (" ")
+    print ("Do you want to continue?")
+    print ("Yes for continue   No for exit")
+    keeprunning = input(" ")
     if keeprunning == "Yes" or keeprunning == "yes":
         running == True
     else:
