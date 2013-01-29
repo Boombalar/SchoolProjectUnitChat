@@ -11,3 +11,4 @@ if variable3 == (variable3):
     print (variable3)
 
 else: time.sleep(1), print (variable4)
+time.sleep(5)
