@@ -1,4 +1,5 @@
 import math
+import sys
 
 running = True
 
@@ -39,4 +40,4 @@ while running == True:
     if fortsæt == "Ja":
         running == True
     else:
-        exit
+        sys.exit(0)
