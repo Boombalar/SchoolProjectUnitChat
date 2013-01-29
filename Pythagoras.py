@@ -36,7 +36,7 @@ while running == True:
     if flag == True:
         print ("Resultatet er: ", resultat)
 
-    fortsæt = input("Vil du fortsætte ")
+    fortsæt = input("Vil du fortsætte? ")
     if fortsæt == "Ja" or fortsæt == "ja":
         running == True
     else:
