@@ -4,40 +4,42 @@ import sys
 running = True
 
 while running == True:
-    side = input ("Hvilken side skal du finde? ")
-    resultat = 0
+    side = input ("which side do you want to find? ")
+    result = 0
     flag = True
-    if side == "a":
-        b = input ("Hvor lang er siden b? ")
-        c = input ("Hvor lang er siden c? ")
-        btal = float(b)
-        ctal = float(c)
-        if float(c) < float(b):
-            print ("Dette er ikke en ret vinkel")
+    if side == "a" or side == "A":
+        bString = input ("How long is side b? ")
+        cString = input ("How long is side c? ")
+        b = float(bString)
+        c = float(cString)
+        if (c) < (b):
+            print ("This is not a 90 degree triangle")
             flag = False
-        elif float(c) > float(b):
-            resultat = (math.sqrt(ctal ** 2 - btal ** 2))
-    elif side == "b":
-        a = input ("Hvor lang er siden a? ")
-        c = input ("Hvor lang er siden c? ")
-        atal = float(a)
-        ctal = float(c)
-        if float(c) < float(a):
-                print ("Dette er ikke en ret vinkel")
+        elif (c) > (b):
+            result = (math.sqrt(c ** 2 - b ** 2))
+    elif side == "b" or side == "B":
+        aString = input ("How long is side a? ")
+        cString = input ("How long is side c? ")
+        a = float(aString)
+        c = float(cString)
+        if (c) < (a):
+                print ("This is not a 90 degree triangle")
                 flag = False
-        elif float(c) > float(a):
-            resultat = (math.sqrt(ctal ** 2 - atal ** 2))
-    elif side == "c":
-        a = input ("Hvor lang er siden a? ")
-        b = input ("Hvor lang er siden b? ")
-        atal = float(a)
-        btal = float(b)
-        resultat = (math.sqrt(atal ** 2 + btal ** 2))
+        elif (c) > (a):
+            result = (math.sqrt(c ** 2 - a ** 2))
+    elif side == "c" or side == "C":
+        aString = input ("How long is side a? ")
+        bString = input ("How long is side b? ")
+        a = float(aString)
+        b = float(bString)
+        result = (math.sqrt(a ** 2 + b ** 2))
     if flag == True:
-        print ("Resultatet er: ", resultat)
+        print ("The result is: ", result)
 
-    fortsæt = input("Vil du fortsætte? ")
-    if fortsæt == "Ja" or fortsæt == "ja":
+    print (" ")    
+    print ("Yes for continue     No for exit")
+    keeprunning = input("Do you want to continue? ")
+    if keeprunning == "Yes" or keeprunning == "yes":
         running == True
     else:
         sys.exit(0)
