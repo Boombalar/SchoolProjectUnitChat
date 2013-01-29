@@ -1,10 +1,9 @@
 import math
 
-side = input ("Hvilken side skal du finde? ")
-
 running = True
 
 while running == True:
+    side = input ("Hvilken side skal du finde? ")
     resultat = 0
     flag = True
     if side == "a":
@@ -36,8 +35,8 @@ while running == True:
     if flag == True:
         print ("Resultatet er: ", resultat)
 
-    fortsæt = input("Vil du fortsæte")
+    fortsæt = input("Vil du fortsætte ")
     if fortsæt == "Ja":
         running == True
     else:
-        running == False
+        exit
