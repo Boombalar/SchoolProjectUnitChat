@@ -1,0 +1,6 @@
+sa = input ("siden a=")
+sb = input ("siden b=")
+x  = float (sa) 
+y  = float (sb)
+o= (2*x)+(2*y)
+print (o)
