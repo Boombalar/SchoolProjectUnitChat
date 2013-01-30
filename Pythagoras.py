@@ -17,6 +17,7 @@ while running == True:
             flag = False
         elif (c) > (b):
             result = (math.sqrt(c ** 2 - b ** 2))
+            
     elif side == "b" or side == "B":
         aString = input ("How long is side a? ")
         cString = input ("How long is side c? ")
@@ -27,6 +28,7 @@ while running == True:
                 flag = False
         elif (c) > (a):
             result = (math.sqrt(c ** 2 - a ** 2))
+            
     elif side == "c" or side == "C":
         aString = input ("How long is side a? ")
         bString = input ("How long is side b? ")
