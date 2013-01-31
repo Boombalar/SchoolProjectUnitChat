@@ -14,10 +14,12 @@ def andengradsligning():
     bValue = input (bValue[LANG])
 
     cValue = ("Hvad er c-værdien?\n", "What is the c-value?\n")
+
     cValue = input (cValue[LANG])
 
     aValue = float (aValue)
     bValue = float (bValue)
+    
     cValue = float (cValue)
 
     #Diskriminatnenformel er: b^2-4ac
@@ -28,16 +30,20 @@ def andengradsligning():
         ERROR = ("0 løsninger, diskriminatnen er negativ!", "0 solutions, the discriminant is negative!")
         print (ERROR[LANG])
     elif (discriminant) == 0:
-        solution1 = ("1 løsning, diskriminaten er 0!", "1 solution, the discriminant is 0!")
-        print (solution1[LANG])
-    else:
         discriminantText = ("Diskriminanten er\n", "The discriminant is\n",)
         print (discriminantText[LANG], discriminant)
+        solution1 = ("1 løsning, diskriminaten er 0!", "1 solution, the discriminant is 0!")
+        print (solution1[LANG])
+        singleSolution = "Løsningen er\n", "The solution is:\n"
+        print (singleSolution[LANG], (-bValue/(2.0*aValue)))
 
-    result = ("Løsning 1 er:\n", "Solution 1 is:\n")
-    print (result[LANG], (-bValue + (math.sqrt(discriminant)/(2*aValue))))
-    result2 = ("Løsning 2 er:\n", "Solution 2 is:\n")
-    print (result2[LANG], (-bValue - (math.sqrt(discriminant)/(2*aValue))))
+    elif (discriminant) > 0:
+        discriminantText = ("Diskriminanten er\n", "The discriminant is\n",)
+        print (discriminantText[LANG], discriminant)
+        result = ("Løsning 1 er:\n", "Solution 1 is:\n")
+        print (result[LANG],(-bValue + math.sqrt(discriminant))/(2.0*aValue))
+        result2 = ("Løsning 2 er:\n", "Solution 2 is:\n")
+        print (result2[LANG], (-bValue - math.sqrt(discriminant))/(2.0*aValue))
 
     return    
 andengradsligning()
