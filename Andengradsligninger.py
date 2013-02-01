@@ -51,7 +51,7 @@ def andengradsligning():
         toppunktText = ("Toppunktet er:\n", "The summit is:\n")
         toppunktx = -(bValue/(2.0*aValue))
         toppunkty = -(discriminant/(4.0*aValue))
-        print (toppunktText[LANG], toppunktx, toppunkty)
+        print (toppunktText[LANG],"x=", toppunktx, "\n","y=", toppunkty)
 
         return result, result2, toppunktx, toppunkty
 
