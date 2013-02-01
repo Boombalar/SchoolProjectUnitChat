@@ -88,3 +88,5 @@ def volumeFromArea(area):
     radius = radiusFromArea(area)
     volume = volumeFromRadius(radius)
     return area
+
+ball()
