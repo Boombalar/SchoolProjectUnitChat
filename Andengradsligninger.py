@@ -14,12 +14,10 @@ def andengradsligning():
     bValue = input (bValue[LANG])
 
     cValue = ("Hvad er c-værdien?\n", "What is the c-value?\n")
-
     cValue = input (cValue[LANG])
 
     aValue = float (aValue)
     bValue = float (bValue)
-    
     cValue = float (cValue)
 
     #Diskriminatnenformel er: b^2-4ac
